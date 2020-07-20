@@ -1,0 +1,106 @@
+        /* ESTRUCTURA BASICA DEL CSS
+SELECTOR = CUAL ES EL ELEMENTO QUE VAMOS A CAMBIAR
+
+selector {
+    propiedad: valor;
+}
+
+PROPIEDAD = QUE PROPIEDAD QUE DEBEMOS CAMBIAR?
+BORDES, SOMBRESM COLOR
+EXISTEN SOLO ELEMTOS EN LINEA
+Y ELEMENTOS EN BLOQUE 
+
+EN LINEA SON LOS ELEMENTOS QUE SE AJUSTAN A SU CONTENIDO
+
+SI EL TEXTO ES EN BLOQUE ES ENTERO 
+
+*/
+        /*TIPOS DE SELECTOR*/
+        /*
+SELECTOR UNIVERSAL 
+* {
+    color: red;
+}
+*/
+        /*
+selecciones de tipo = por etiquetas (button, label, input)
+
+h1 {
+    color: blue;
+}
+*/
+        /*
+Seleccionar por clases
+Se le agrega un class a la etiqueta y aqui se le manda a llamar
+
+para seleccionar por clase se usa un .
+
+*/
+        
+        .titulo {
+            color: aqua;
+            right: 10px;
+        }
+        /*
+seleccionar elemento por id se usa el #
+
+#input2 {
+    color: yellowgreen;
+}
+*/
+        /* pseudo clase
+uso de hover , puede aplicarse en cualquier tag
+la idea de css es que entre mas especifico mejor
+
+*/
+        /* la especificidad
+
+Cambia la forma de las propiedades sin afectar al resto
+RANGOS DE JERARQUIA
+1- !important
+2- Estilos en lines
+3- identificadores
+4- Clases
+5- Pseudo-clases (hover)
+6- atributos (nombre cualquiera a un atributo y se le da valor con css)
+HTML
+<input id="input2" random = "ok" value="ok">
+CSS
+[random="ok"]{
+    color: red;
+}
+7- elementos
+8- Pseudo-elementos
+Lista de pseudoelementos
+
+    ::after
+    ::before
+    ::first-letter
+    ::first-line
+    ::selection
+    ::backdrop
+    ::placeholder
+    ::marker
+    ::spelling-error
+    ::grammar-error 
+    De vez en cuando se utilizan dos puntos dobles (::) en vez de solo uno (:). Esto forma parte de CSS3 y de un intento para distinguir pseudo-elementos de pseudo-clases
+*/
+        /* metopdología Bem*/
+        /* medidas fijas */
+        
+        .contact-form {
+            font-size: 30px;
+        }
+        /* medidas relativas
+        estas varian en proporcion a la caja contenerdora
+        en contact-form se tiene un tamaño de letra de 30 px
+        en contact-form b se le da 0.5em y ese valor se multipñica en proporcion
+        a su contenedor es decir los 30px (x) (0.5px * 16px)
+        esto funciona con cualquier propiedad que trabaje con unidades de medida
+        
+        em = 16px
+*/
+        
+        .contact-form b {
+            font-size: 0.5em;
+        }

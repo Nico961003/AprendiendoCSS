@@ -1,0 +1,20 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* tamaño que ocupa de ancho donde la letra es el centro*/
+    line-height: 1.0;
+    /* TIPOGRAFIA DE GOOGLE
+    buscarla en la red y pegar el link en HTML
+    */
+    font-family: 'Rowdies', cursive;
+    /* Grosor de la letra */
+    font-weight: 55;
+}
+
+.contact-form {
+    font-size: 25px;
+}
+
+.contact-form__h2 {
+    font-size: 2em;
+    color: rgb(236, 39, 11);
+}
