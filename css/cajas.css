@@ -1,0 +1,73 @@
+    * {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+        font-size: 30px;
+    }
+    
+    h2 {
+        background-color: #f34b4b;
+        /* activar propiedas de inline y de bloque en el componente */
+        display: inline-block;
+        /* pading - distancia entre el texto y el borde de la caja la caja 
+    se divide en left- izq, top - arriba, bottom- abajo, rigth- derecha
+    */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        /* padding : 20px; esta propiedad le da 20 px en todo*/
+        /* padding : 20px 10px; esta propiedad le da 20 al top y button y la segunda le da la propiedad al left y al rigth*/
+        /* padding : 20px 10px 30px 10px; la primer medida se la da al top, luego rigth, button, left, como las manecillas del reloj*/
+        height: 100px;
+        width: 200px;
+        box-sizing: border-box;
+        text-align: center;
+        /* margin - distancia entre cajas, igual que pading existe el top, rigth ... */
+        margin: 10px;
+        /* se separa de todos los lados 10px */
+        /* es el borde (redondo)*/
+        border-radius: 2em;
+        /* tamaño, estilo del borde (el mas usado es solid), color*/
+        /* border: 2px solid rgb(84, 84, 228);*/
+        /*
+        BOX MODEL
+        Lo conforman 4 propiedades principales y esta es su jerarquia
+        1- content : lo que se tiene dentro de la caja generalmente se modifica con la propiedad line-height: ;
+        establece la altura de una casilla remarcada por líneas. Comúnmente se usa para establecer la distancia entre líneas de texto.
+        2- padding
+        3- border
+        4- margin
+        */
+        /* darle sombra a la caja
+        derecha, abajo, difuminacion, borde (generalmente es 0),color
+        */
+        box-shadow: 10px 10px 10px 0 black;
+        /* text shadow es lo mismo pero con el texxto a excepcion de que no tiene borde*/
+        text-shadow: 2px 2px 7px black, 2px 2px 7px black;
+        /* propiedad transform es por grados*/
+        transform: rotate(45deg);
+    }
+    /* outline, es una  forma de trabajo que reduce el uso de mucho codigo 
+.caja1,caja2{
+}
+y con eso caja 1 y 2 tendrian las mismas propiedades
+*/
+    
+    .caja1 {
+        width: 200px;
+        height: 200px;
+        background: red;
+        margin: auto;
+    }
+    /* con margin auto te da las medidas del 50% en todos los lados de la caja y en el centro tu componente*/
+    /* si se usa 
+    box-sizing: border-box; le da un margen sin respetar el contenido
+    y si se usa box-sizing: content-box; respeta el contenido y da el borde hacia afuera del componente
+    */
+    
+    .caja2 {
+        width: 200px;
+        height: 200px;
+        background: yellow;
+        margin: auto;
+    }
