@@ -1,0 +1,32 @@
+/*
+dispĺay table cel
+display table row es em foña (horizontal)
+display colum es en vertical
+*/
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 40px;
+    font-size: 40px;
+}
+
+div {
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: grey;
+    /* para que no se salga el texto de la caja*/
+    /* auto detecta si es necesario en x o y y coloca los scroll
+    overflow: auto;*/
+    overflow: hidden;
+}
+
+img {
+    width: 320px;
+    position: relative;
+    top: 60px;
+    left: 40px;
+    outline: 2px solid blue;
+}

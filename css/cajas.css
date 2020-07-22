@@ -54,10 +54,11 @@ y con eso caja 1 y 2 tendrian las mismas propiedades
 */
     
     .caja1 {
-        width: 200px;
+        /* width: 200px;
         height: 200px;
         background: red;
-        margin: auto;
+        margin: auto;*/
+        outline: 5px solid blue;
     }
     /* con margin auto te da las medidas del 50% en todos los lados de la caja y en el centro tu componente*/
     /* si se usa 
@@ -66,8 +67,78 @@ y con eso caja 1 y 2 tendrian las mismas propiedades
     */
     
     .caja2 {
-        width: 200px;
-        height: 200px;
+        width: 120px;
+        height: 120px;
         background: yellow;
-        margin: auto;
+        /*margin: auto;*/
+        /* cada caja tiene un espacio reservado 
+        el position relative el espacio se sigue conservando dentro del DOM
+        los 20 px del top se quedan, no se alteran
+        top y left son las mas importantes en la position
+        */
+        position: relative;
+        top: 20px;
+    }
+    
+    div {
+        width: 120px;
+        height: 120px;
+        /* background: yellow;*/
+        display: block;
+        top: 20px;
+    }
+    
+    .caja3 {
+        background: #f34b4b;
+        position: relative;
+        top: 60px;
+        left: 20px;
+    }
+    
+    .caja4 {
+        background: gainsboro;
+        /* el z index, pposicion respecto al eje z
+        el z index funciona solamente cuando la caja esta posicionada
+        si queremos que la caja dibujada anteriormente se vea por arriba de la ultima caja dibujada
+        se usa la propiedad
+        z-index: 1;
+        */
+        position: relative;
+    }
+    /* poner al hijo por debajo del padre
+    recordando que el ultimo en ser dibujado es el hijo
+    */
+    
+    .padre {
+        width: 300px;
+        height: 300px;
+        background: blue;
+        margin: 40px;
+        position: relative;
+    }
+    
+    .hijo {
+        background: orange;
+        height: 120px;
+        width: 120px;
+        position: relative;
+        top: -340px;
+        left: 20px;
+        z-index: -1;
+    }
+    /*position: absolute ;
+    el espacio reservado de la caja se pierde y el valor de abajo puede subir
+    */
+    
+    .caja5 {
+        background-color: green;
+        /*opacity es la transparencia*/
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+    }
+    /* el view port es todo lo que se puede ver de la pantalla (HTML)*/
+    
+    .caja6 {
+        background-color: lightblue;
     }
